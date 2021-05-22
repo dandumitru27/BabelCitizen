@@ -1,8 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using BabelCitizen.Data.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BabelCitizen.Data
 {
@@ -12,5 +10,9 @@ namespace BabelCitizen.Data
             : base(options)
         {
         }
+
+        public DbSet<Language> Languages { get; set; }
+
+        public DbSet<Song> Songs { get; set; }
     }
 }
