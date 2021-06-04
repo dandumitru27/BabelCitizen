@@ -1,0 +1,13 @@
+﻿@using BabelCitizen.Services;
+
+@model BabelCitizen.Data.Entities.Song
+
+<div class="col-6 col-md-4 col-xl-3 song-card">
+    <a href="/@Model.Language.Name.ToLower()-music/@Model.Slug">
+        <img src="https://img.youtube.com/vi/@Model.YouTubeId/hqdefault.jpg" class="img-fluid" />
+    </a>
+    <div class="song-title">@Model.Artist - @Model.Title</div>
+    <div class="details">
+        @Model.Year • @Model.Genres.Split(',')[0] • @SongService.FormatNumberShortSuffix(Model.YouTubeViewCount) views
+    </div>
+</div>

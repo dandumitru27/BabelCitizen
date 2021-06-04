@@ -1,10 +1,22 @@
 ﻿@page
+@using BabelCitizen.Services;
 @model IndexModel
 @{
     ViewData["Title"] = "Babel Citizen - Learn Foreign Languages with Music";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@foreach (var language in Model.Languages)
+{
+    <div class="language-block">
+        <h2 class="language-title">
+            New @language.Name Songs
+            <a href="/@language.Name.ToLower()-music" class="btn btn-secondary see-all">See All</a>
+        </h2>
+        <div class="row">
+            @foreach (var song in Model.NewSongsByLanguage[language.Id])
+            {
+                <partial name="_SongCard" model="song" />
+            }
+        </div>
+    </div>
+}
