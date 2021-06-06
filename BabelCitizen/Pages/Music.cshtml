@@ -1,0 +1,13 @@
+﻿@page "/{languageName}-music"
+@model BabelCitizen.Pages.MusicModel
+@{
+    ViewData["Title"] = $"Learn {Model.Language.Name} with Music | videos, lyrics, translations";
+}
+
+<h2 class="language-title">All @Model.Language.Name Songs</h2>
+<div class="row">
+    @foreach (var song in Model.Songs)
+    {
+        <partial name="_SongCard" model="song" />
+    }
+</div>
