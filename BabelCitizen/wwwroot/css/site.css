@@ -124,3 +124,36 @@ h2 {
 .details {
     color: #A0A0A0;
 }
+
+/* Song page
+-------------------------------------------------- */
+
+.lyrics {
+    font-size: 1.1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.song-details {
+    padding-bottom: 20px;
+}
+
+.genre {
+    background-color: #A0A0A0;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px
+}
+
+.views {
+    margin-left: 5px;
+}
+
+.other-songs {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}

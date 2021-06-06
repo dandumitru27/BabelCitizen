@@ -1,0 +1,38 @@
+﻿@page "/{languageName}-music/{slug}"
+
+@using BabelCitizen.Services;
+
+@model BabelCitizen.Pages.SongModel
+@{
+    ViewData["Title"] = $"{Model.Song.Artist} - {Model.Song.Title} | Learn {Model.Song.Language.Name} with Music | video, lyrics, translation";
+}
+
+<h1>@Model.Song.Artist - @Model.Song.Title</h1>
+<div class="lyrics">
+    Lyrics and English translation: <a href="@Model.Song.LyricsAndTranslationUrl" target="_blank">@Model.Song.LyricsAndTranslationUrl</a>
+</div>
+<div class="song-details">
+    @Model.Song.Year
+
+    @foreach (var genre in Model.Song.Genres.Split(','))
+    {
+        <span class="genre">@genre</span>
+    }
+
+    <span class="views" title="YouTube views">@SongService.FormatNumberShortSuffix(Model.Song.YouTubeViewCount) YT views</span>
+</div>
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/@Model.Song.YouTubeId?rel=0" allowfullscreen></iframe>
+</div>
+<div class="other-songs">
+    <h2 class="language-title">
+        Other @Model.Song.Language.Name Songs
+        <a href="/@Model.Song.Language.Name.ToLower()-music" class="btn btn-secondary see-all">See All</a>
+    </h2>
+    <div class="row">
+        @foreach (var song in Model.OtherSongs)
+        {
+            <partial name="_SongCard" model="song" />
+        }
+    </div>
+</div>
