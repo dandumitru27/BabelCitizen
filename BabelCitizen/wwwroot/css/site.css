@@ -61,6 +61,16 @@ button.accept-policy {
     line-height: 60px; /* Vertically center the text there */
 }
 
+.logout-form {
+    display: inline;
+}
+
+.logout-button {
+    padding: 0;
+    border: 0;
+    vertical-align: inherit;
+}
+
 /* Global
 -------------------------------------------------- */
 html {
