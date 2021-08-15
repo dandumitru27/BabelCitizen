@@ -1,0 +1,32 @@
+﻿@page
+@model BabelCitizen.Areas.Admin.Pages.IndexModel
+
+<a href="/admin/song-edit" class="btn btn-success">New</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Artist</th>
+            <th>Title</th>
+            <th>Language</th>
+            <th>Year</th>
+            <th>Genres</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var song in Model.Songs)
+        {
+            <tr>
+                <td>@song.Artist</td>
+                <td>@song.Title</td>
+                <td>@song.Language.Name</td>
+                <td>@song.Year</td>
+                <td>@song.Genres</td>
+                <td><a href="/admin/song-edit/@song.Id">Edit</a></td>
+                <td><a href="/admin/song-delete/@song.Id">Delete</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

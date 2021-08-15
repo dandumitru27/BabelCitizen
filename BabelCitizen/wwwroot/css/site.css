@@ -91,6 +91,10 @@ h2 {
     font-size: 1.5rem;
 }
 
+.table {
+    margin-top: 10px;
+}
+
 .language-block {
     padding-bottom: 20px;
 }
