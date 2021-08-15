@@ -1,0 +1,21 @@
+﻿@page "{id}"
+@model BabelCitizen.Areas.Admin.Pages.SongDeleteModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<h1>Are you sure you want to delete this song?</h1>
+
+<div class="delete-details">
+    <div>
+        Id: @Model.Song.Id
+    </div>
+    <div>
+        Artist: @Model.Song.Artist
+    </div>
+    <div>
+        Title: @Model.Song.Title
+    </div>
+</div>
+
+<form method="post">
+    <button type="submit" class="btn btn-primary">Delete</button>
+</form>
