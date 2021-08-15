@@ -1,0 +1,48 @@
+﻿@page "{id?}"
+@model BabelCitizen.Areas.Admin.Pages.SongEditModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<form method="post">
+    <div class="form-group">
+        <label>Language</label>
+        <select asp-for="Song.LanguageId" class="form-control">
+            @foreach (var language in Model.Languages)
+            {
+                <option value="@language.Id">@language.Name</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Artist</label>
+        <input asp-for="Song.Artist" required class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Title</label>
+        <input asp-for="Song.Title" required class="form-control">
+    </div>
+    <div class="form-group">
+        <label>YouTube Id</label>
+        <input asp-for="Song.YouTubeId" required class="form-control">
+    </div>
+    <div class="form-group">
+        <label>YouTube View Count</label>
+        <input asp-for="Song.YouTubeViewCount" required class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Lyrics and Translation URL</label>
+        <input asp-for="Song.LyricsAndTranslationUrl" required class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Year</label>
+        <input asp-for="Song.Year" type="number" required class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Genres</label>
+        <input asp-for="Song.Genres" required class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<div class="back">
+    <a href="/admin">Back</a>
+</div>
