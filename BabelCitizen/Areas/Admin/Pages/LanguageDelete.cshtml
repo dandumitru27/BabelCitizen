@@ -1,0 +1,18 @@
+﻿@page "{id}"
+@model BabelCitizen.Areas.Admin.Pages.LanguageDeleteModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<h1>Are you sure you want to delete this language?</h1>
+
+<div class="delete-details">
+    <div>
+        Id: @Model.Language.Id
+    </div>
+    <div>
+        Name: @Model.Language.Name
+    </div>
+</div>
+
+<form method="post">
+    <button type="submit" class="btn btn-primary">Delete</button>
+</form>

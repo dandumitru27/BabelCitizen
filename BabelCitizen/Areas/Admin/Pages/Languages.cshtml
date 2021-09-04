@@ -1,0 +1,26 @@
+﻿@page
+@model BabelCitizen.Areas.Admin.Pages.LanguagesModel
+
+<a href="/admin/language-edit" class="btn btn-success">New</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var language in Model.Languages)
+        {
+            <tr>
+                <td>@language.Id</td>
+                <td>@language.Name</td>
+                <td><a href="/admin/language-edit/@language.Id">Edit</a></td>
+                <td><a href="/admin/language-delete/@language.Id">Delete</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,15 @@
+﻿@page "{id?}"
+@model BabelCitizen.Areas.Admin.Pages.LanguageEditModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<form method="post">
+    <div class="form-group">
+        <label>Name</label>
+        <input asp-for="Language.Name" required class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<div class="back">
+    <a href="/admin/languages">Back</a>
+</div>
