@@ -83,6 +83,25 @@ body {
     margin-bottom: 60px;
 }
 
+/* this (950px) is added by me, the others below are from Bootstrap, to avoid overriding them */
+@media (min-width: 950px) {
+    .container {
+        max-width: 920px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
 h1 {
     font-size: 1.8rem;
 }
