@@ -7,6 +7,10 @@
     ViewData["Title"] = $"{Model.Song.Artist} - {Model.Song.Title} | Learn {Model.Song.Language.Name} with Music | video, lyrics, translation";
 }
 
+@section Head {
+    <meta property="og:image" content="https://img.youtube.com/vi/@Model.Song.YouTubeId/hqdefault.jpg" />
+}
+
 <h1>@Model.Song.Artist - @Model.Song.Title</h1>
 <div class="lyrics">
     Lyrics and English translation: <a href="@Model.Song.LyricsAndTranslationUrl" target="_blank">@Model.Song.LyricsAndTranslationUrl</a>

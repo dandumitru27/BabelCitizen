@@ -12,6 +12,8 @@
     </script>
 
     <meta name="google-site-verification" content="z0paZGgVIG4KI7o9-CA_gPJT2KJUDkuug8kede363tc" />
+
+    @await RenderSectionAsync("Head", required: false)
 }
 
 @RenderBody()
