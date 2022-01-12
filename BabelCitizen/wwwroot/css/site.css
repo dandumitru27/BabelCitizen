@@ -9,7 +9,7 @@ a.navbar-brand {
 
 /* Provide sufficient contrast against white background */
 a {
-    color: #0366d6;
+    color: #639c16;
 }
 
 .btn-primary {
@@ -126,8 +126,8 @@ h2 {
     margin-left: 10px;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
-    background-color: #A0A0A0;
-    border-color: #A0A0A0;
+    background-color: #d39f85;
+    border-color: #d39f85;
 }
 
 .song-card {
@@ -160,7 +160,7 @@ h2 {
 }
 
 .details {
-    color: #A0A0A0;
+    color: #639c16;
 }
 
 /* Song page
@@ -177,7 +177,7 @@ h2 {
 }
 
 .genre {
-    background-color: #A0A0A0;
+    background-color: #d39f85;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
