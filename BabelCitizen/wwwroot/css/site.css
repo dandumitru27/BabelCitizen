@@ -10,6 +10,7 @@ a.navbar-brand {
 /* Provide sufficient contrast against white background */
 a {
     color: #639c16;
+    text-decoration: underline;
 }
 
 .btn-primary {
@@ -71,6 +72,10 @@ button.accept-policy {
     vertical-align: inherit;
 }
 
+.login-link {
+    text-decoration: none;
+}
+
 /* Global
 -------------------------------------------------- */
 html {
@@ -128,6 +133,7 @@ h2 {
     padding-bottom: 0.2rem;
     background-color: #d39f85;
     border-color: #d39f85;
+    text-decoration: none;
 }
 
 .song-card {
@@ -173,7 +179,7 @@ h2 {
 }
 
 .song-details {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .genre {
@@ -191,9 +197,25 @@ h2 {
     margin-left: 5px;
 }
 
+.guide {
+    font-size: 1.1em;
+    padding-bottom: 20px;
+}
+
 .other-songs {
     margin-top: 30px;
     margin-bottom: 50px;
+}
+
+/* Guide page
+-------------------------------------------------- */
+.info {
+    font-size: 1.1em;
+}
+
+.steps {
+    font-size: 1.1em;
+    margin-top: 20px;
 }
 
 /* Admin Index page
