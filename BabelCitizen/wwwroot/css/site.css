@@ -150,6 +150,17 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Index page
+-------------------------------------------------- */
+
+.intro {
+    font-size: 1.1em;
+    background-color: #F6F6F6;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
 /* Song card
 -------------------------------------------------- */
 
