@@ -8,6 +8,10 @@ It's developed in .NET 5 (C#, ASP.NET Razor Pages, Entity Framework), using a SQ
 
 It was developed fast as an MVP, put online on babelcitizen.com, but it's now discontinued as it did not get enough traction.
 
+### Project set-up
+
+Create an empty SQL Server database named BabelCitizen, check the connection string in appsettings.json, then run the project which will create the tables using the Entity Framework migrations. Use the script [populate_database.sql](/populate_database.sql) from the root folder to get initial songs in the database, it now adds 37 songs in 3 languages.
+
 ![home](https://i.imgur.com/Hmzjpt9.png)
 
 ![song](https://i.imgur.com/foyHmz2.png)
