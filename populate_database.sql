@@ -86,5 +86,15 @@ INSERT [dbo].[Songs] ([Id], [LanguageId], [Artist], [Title], [Slug], [YouTubeId]
 GO
 INSERT [dbo].[Songs] ([Id], [LanguageId], [Artist], [Title], [Slug], [YouTubeId], [YouTubeViewCount], [LyricsAndTranslationUrl], [Year], [Genres]) VALUES (5031, 4, N'Bagossy Brothers Company', N'Olyan Ő', N'bagossy-brothers-company-olyan-o', N'lEU011dGjbk', 63757587, N'https://lyricstranslate.com/en/olyan-%C3%B6-shes.html#songtranslation', 2019, N',rock,')
 GO
+INSERT [dbo].[Songs] ([Id], [LanguageId], [Artist], [Title], [Slug], [YouTubeId], [YouTubeViewCount], [LyricsAndTranslationUrl], [Year], [Genres]) VALUES (5032, 1, N'Rosenstolz', N'Gib mir Sonne', N'rosenstolz-gib-mir-sonne', N'_QltRS3NrTI', 3866566, N'https://lyricstranslate.com/en/gib-mir-sonne-give-me-sun.html-0', 2008, N',pop-rock,')
+GO
+INSERT [dbo].[Songs] ([Id], [LanguageId], [Artist], [Title], [Slug], [YouTubeId], [YouTubeViewCount], [LyricsAndTranslationUrl], [Year], [Genres]) VALUES (5033, 4, N'Republic', N'Ha Itt Lennél Velem', N'republic-ha-itt-lennel-velem', N'yM9emQMPRgc', 6854691, N'https://lyricstranslate.com/en/ha-itt-lenn%C3%A9l-velem-if-you-were-here-me.html', 1994, N',rock,')
+GO
+INSERT [dbo].[Songs] ([Id], [LanguageId], [Artist], [Title], [Slug], [YouTubeId], [YouTubeViewCount], [LyricsAndTranslationUrl], [Year], [Genres]) VALUES (5034, 1, N'Wilhelmine', N'Meine Liebe', N'wilhelmine-meine-liebe', N'e6A2gHIG44w', 1533801, N'https://lyricstranslate.com/en/meine-liebe-my-love.html-3', 2019, N',pop,')
+GO
+INSERT [dbo].[Songs] ([Id], [LanguageId], [Artist], [Title], [Slug], [YouTubeId], [YouTubeViewCount], [LyricsAndTranslationUrl], [Year], [Genres]) VALUES (5035, 1, N'Juli', N'Ein neuer Tag', N'juli-ein-neuer-tag', N'l5fOXBLXwq0', 264114, N'https://lyricstranslate.com/en/ein-neuer-tag-new-day.html-0', 2006, N',pop-rock,')
+GO
+INSERT [dbo].[Songs] ([Id], [LanguageId], [Artist], [Title], [Slug], [YouTubeId], [YouTubeViewCount], [LyricsAndTranslationUrl], [Year], [Genres]) VALUES (5036, 2, N'Adèle Castillon', N'À la folie', N'adele-castillon-a-la-folie', N'p8AgGTtXmac', 1250043, N'https://lyricstranslate.com/en/adele-castillon-la-folie-english', 2024, N',pop,')
+GO
 SET IDENTITY_INSERT [dbo].[Songs] OFF
 GO
